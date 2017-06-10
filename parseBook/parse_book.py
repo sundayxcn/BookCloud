@@ -51,3 +51,13 @@ dic = parse_detail_from_meta(scr_response)
 book_detail = BookDetail(dic)
 book_detail.printf()
 chapter_list = parse_chapter_list_from_dd(scr_response)
+for chapter in chapter_list:
+    chapter.printf()
+
+
+
+def get_book_detail():
+    return book_detail
+
+def get_book_chapter_list():
+    return chapter_list

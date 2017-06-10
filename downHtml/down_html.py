@@ -1,4 +1,8 @@
-body = open("suren.html", "r").read().decode('gbk')
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+file_path = os.path.join(BASE_DIR, 'suren.html')
+body = open(file_path, "r").read().decode('gbk')
 
 # url = "http://www.baidu.com/s?q1= &q2=&q3=&q4=&gpc=stf&ft=&q5=1&q6=www.bxwx9.org&tn=baiduadv";
 # url2 = "http://www.baidu.com"
