@@ -44,7 +44,7 @@ def parse_chapter_list_from_dd(response):
     return chapter_list
 
 
-body = down_html.getHtml()
+body = down_html.get_html()
 scr_response = scrapy.Selector(text=body, type='html')
 
 dic = parse_detail_from_meta(scr_response)

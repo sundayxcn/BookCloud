@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding:utf-8
 class BookDetail:
     def __init__(self, dic_metas):
         self.title = dic_metas['og:novel:book_name']
